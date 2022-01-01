@@ -9,7 +9,6 @@ type Context = {
 };
 
 const createContext = (db: iDB) => {
-  
   return async ({ req }) => {
     const auth = (req.headers && req.headers.authorization) || '';
     let context: Context = {
