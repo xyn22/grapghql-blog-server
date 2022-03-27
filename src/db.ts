@@ -67,7 +67,7 @@ class Database extends SQLDataSource implements iDB  {
   }
 
   async getPost(id: number) {
-    return this.knex('posts').select('*').where({ id });
+    return this.knex('posts').select('*').where({ id }).first();
   }
 
   async getPostsForUser(userId: number) {

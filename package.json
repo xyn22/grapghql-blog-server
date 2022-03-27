@@ -1,5 +1,5 @@
 {
-  "name": "bigQuery graphQL interface for btc",
+  "name": "graphql",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
