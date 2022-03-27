@@ -11,4 +11,4 @@ export default {
     const result = await loaders.postsLoader.load({ postId: post.id, bodyLength });
     return result.body;
   }
-} 
+}

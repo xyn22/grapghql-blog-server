@@ -94,6 +94,7 @@ export default {
           message: "login fails",
         }
       }
+      console.log(user);
       const token = await signToken(user.id.toString());
       const matches = await compare(password, user.password);
       if (matches) {

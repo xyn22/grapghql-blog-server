@@ -29,12 +29,13 @@ export default {
     }
   },
 
-  post: async (_,{ id }, { dataSources }: { dataSources: { db: iDB } }) => {
+  post: async (_, { id }, { dataSources }: { dataSources: { db: iDB } }) => {
     const { db } = dataSources;
     const post = await db.getPost(id);
     if (!post) {
       return null;
     }
+    return post;
   },
 
   comments: async (_, { postId, pageSize, after }, { dataSources }: { dataSources: { loaders, db: iDB } }) => {
